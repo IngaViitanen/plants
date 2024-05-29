@@ -28,7 +28,7 @@ a:hover{
 
 /* Home */
 .home-header {
-  background: url('/public/images/plants_bg.jpg') center no-repeat;
+  background: url('/images/plants_bg.jpg') center no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw;
