@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Card from './Card'
 
 const Plants = () => {
     const [plants, setPlants] = useState([])
@@ -25,19 +26,22 @@ const Plants = () => {
     //     plant
     // }))
   return (
+    // <>
+    // {plants !== null ? 
+    //     <div>
+    //         {plants?.data?.map((plant, i) => (
+    //             <>
+    //             <p>{plant.common_name}</p>
+    //             {/* TODO: FIX MAPPING */}
+    //             {/* <img src={plant?.default_image?.thumbnail} alt={plant?.common_name} /> */}
+    //             </>
+    //         ))}
+    //     </div>
+    //     : <p>loading...</p>
+    // }
+    // </>
     <>
-    {plants !== null ? 
-        <div>
-            {plants?.data?.map((plant, i) => (
-                <>
-                <p>{plant.common_name}</p>
-                {/* TODO: FIX MAPPING */}
-                {/* <img src={plant?.default_image?.thumbnail} alt={plant?.common_name} /> */}
-                </>
-            ))}
-        </div>
-        : <p>loading...</p>
-    }
+    <Card />
     </>
   )
 }
